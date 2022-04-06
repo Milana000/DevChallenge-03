@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #181719;
+}
+
+img {
+    max-width: 100%;
+}
+
+#page {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header start */
+#header {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+#header .title {
+    width: 40%;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#header .title h3 {
+    border: 1px solid white;
+    color: white;
+    font-family: 'Crimson Pro', sans-serif;
+    width: 130px;
+    padding: 10px;
+}
+
+#header #nav-menu {
+    width: 50%;
+}
+
+#header #nav-menu #nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    line-height: 3;
+    padding-right: 80px;
+    width: 80%;
+}
+
+#header #nav-bar ul li:first-child {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#header #nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#header #nav-menu .closebtn {
+    display: none;
+}
+
+#header span {
+    display: none;
+}
+
+/* Header end */
+
+/* Main start */
+
+#main {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+#main .text-holder {
+    width: 30%;
+    color: #FFFFFF;
+    padding: 90px 0 0 50px;
+}
+
+#main .text-holder h1 {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+#main .text-holder p {
+    width: 75%;
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#main .text-holder button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+#main .text-holder button i {
+    padding-left: 10px;
+}
+
+#main .image-holder {
+    width: 62%;
+    position: relative;
+}
+
+#main .image-holder .designer-info {
+    background-color: #181719;
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+    bottom: -80px;
+    right: 45px;
+}
+
+#main .image-holder .designer-info p {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 50%;
+    padding-left: 30px;
+}
+
+#main .image-holder .designer-info .name {
+    display: flex;
+    padding: 20px 0 0 30px;
+}
+
+#main .image-holder .designer-info .name img {
+    border-radius: 50%;
+    width: 75px;
+}
+
+#main .image-holder .designer-info .name .info {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 15px 0 0 15px;
+    line-height: 1.5;
+}
+
+#main .image-holder .designer-info .name .info span:first-child {
+    font-size: 18px;
+}
+
+#main .image-holder .designer-info .name .info span:last-child {
+    font-size: 14px;
+    color: #828282;
+}
+
+/* Main end */
+
+/* Footer start */
+
+#page .footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 155px;
+}
+
+#page .footer p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+/* Footer end */
+
+
+@media screen and (max-width:1220px) {
+    #main .text-holder {
+        padding-top: 10px;
+    }
+
+    #main .text-holder h1 {
+        font-size: 35px;
+    }
+
+    #main .image-holder .designer-info {
+        width: 65%;
+        bottom: -110px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #header #nav-menu {
+        padding-right: 30px;
+    }
+
+    #main .text-holder {
+        padding-top: 0;
+    }
+
+    #main .text-holder h1 {
+        font-size: 25px;
+    }
+
+    #main .text-holder p {
+        font-size: 22px;
+        width: 98%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #header #nav-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        background-color: #181719;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+
+    #header #nav-bar ul li a {
+        font-size: 25px;
+    }
+
+
+    #header #nav-bar {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #header #nav-bar ul {
+        flex-direction: column;
+    }
+
+    #header #nav-bar ul li:first-child {
+        border: none;
+    }
+
+
+    #header #nav-menu .closebtn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 60px;
+        color: white;
+    }
+
+    #header span {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        font-size: 45px;
+    }
+
+    #main {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    #main .text-holder {
+        width: 80%;
+    }
+
+    #main .text-holder h1 {
+        font-size: 35px;
+    }
+
+    #main .text-holder p {
+        width: 57%;
+    }
+
+    #main .text-holder button {
+        padding: 20px 0 0 0;
+    }
+
+    #main .image-holder {
+        width: 90%;
+        padding: 50px 30px 0;
+    }
+
+    #page .footer {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #header .title {
+        padding-left: 5px;
+    }
+
+    #main .text-holder p {
+        width: 90%;
+    }
+
+    #main .image-holder {
+        padding: 50px 23px;
+    }
+
+    #main .image-holder .designer-info{
+        width: 75%;
+        bottom: -65px;
+    }
+
+    #main .image-holder .designer-info p{
+        width: 81%;
+    }
+}
